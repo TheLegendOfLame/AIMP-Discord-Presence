@@ -125,7 +125,7 @@ VOID Plugin::UpdateTrackInfo(PAIMPTrackInfo AIMPRemote_TrackInfo)
 
 		discordPresence.largeImageKey = "aimp_radio";
 	}
-	else discordPresence.largeImageKey ="defaultcover";
+	else discordPresence.largeImageKey = AIMP_RA_CMD_GET_ALBUMART;
 
 	Discord_UpdatePresence(&discordPresence);
 }
